@@ -3,5 +3,5 @@
     <string name="main_text">Conjunction (AND)</string>
     <string name="column_one">A</string>
     <string name="column_two">B</string>
-    <string name="answer_column">A^B</string>
+    <string name="answer_column">A ^ B</string>
 </resources>
