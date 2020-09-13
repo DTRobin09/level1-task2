@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
             binding.answerFour.text.toString().toUpperCase()
         )
 
+        // checks if the filled in answers are right
         for (x in filledInAnswers.indices) {
             if (x == 0 && filledInAnswers[x] == getString(R.string.value_true)) {
                 correctAnswers++
