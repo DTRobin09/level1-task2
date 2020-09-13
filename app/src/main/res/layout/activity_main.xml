@@ -7,12 +7,44 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/main_text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/columnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/column_one"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/columnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
+
+    <TextView
+        android:id="@+id/columnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/column_two"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/answerColumn"
+        app:layout_constraintStart_toStartOf="@id/columnOne"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
+
+
+    <TextView
+        android:id="@+id/answerColumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_column"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/columnTwo"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
